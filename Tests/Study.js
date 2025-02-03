@@ -6,3 +6,9 @@ const pessoa = {
     filhos:["K ","L ","M ","J ","P "]
 }
 console.log(pessoa.filhos)
+
+function NomeDaFuncao (){
+    console.log("Código da função")
+}
+
+NomeDaFuncao()
