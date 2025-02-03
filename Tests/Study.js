@@ -5,4 +5,4 @@ const pessoa = {
     idade:21,
     filhos:["K ","L ","M ","J ","P "]
 }
-document.write(pessoa.nome)
+console.log(pessoa.filhos)
