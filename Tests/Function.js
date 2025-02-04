@@ -14,5 +14,13 @@ function mult(num1, num2) {
     return num1 * num2
 }
 
+function divid(num1, num2){
+    return num1 / num2
+}
+
 const dividindo = mult(5, 8) / 4
 console.log(dividindo)
+
+console.log()
+
+console.log(divid(50, 25))
