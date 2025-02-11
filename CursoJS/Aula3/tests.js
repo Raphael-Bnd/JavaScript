@@ -50,3 +50,4 @@ const cincoString = '5';
 const cincoNumber = 5;
 const soma2 = cincoNumber + cincoString;
 console.log(soma2);
+console.log(typeof soma2);
