@@ -17,3 +17,4 @@ console.log(naoDefinido);
 
 naoDefinido = 50; // variavel modificada(passa a ter esse valor)
 console.log(naoDefinido);
+
