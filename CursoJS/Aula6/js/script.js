@@ -1,4 +1,7 @@
-alert('Hello World!');
+let num1 = prompt('Digite um número');
+let num2 = prompt('Digite Outro número');
+let soma = Number(num1) + Number(num2);
+alert(`A soma dos seus dois números é de ${soma}`);
 window.alert('Novo Alerta');
 
 function confirmar() {
@@ -8,7 +11,7 @@ function confirmar() {
     } else {
         const cidade = window.prompt('Digite sua Cidade.')
         if (cidade) {
-            return window.alert(`Se fudeu seu burro kkkkk agora eu sei que a tua cidade é ${cidade} kkkkk`);
+            return window.alert(`Agora sabemos que sua cidade é ${cidade}`);
         }
     }
 }
