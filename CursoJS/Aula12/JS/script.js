@@ -1,0 +1,11 @@
+const num = Number(prompt('Digite um número'));
+const raiz2 = num ** 0.5;
+const Int = Number.isInteger(num);
+const NotAn = Number.isNaN(num);
+document.body.innerHTML = `<h1>Seu número é ${num} </h1>`;
+document.body.innerHTML += `Raiz quadrada: ${raiz2} <br>`;
+document.body.innerHTML += `É um inteiro?: ${Int} <br>`;
+document.body.innerHTML += `É um NaN?: ${NotAn} <br>`;
+document.body.innerHTML += `Arredondado para baixo: ${Math.floor(num)} <br>`;
+document.body.innerHTML += `Arredondado para cima: ${Math.ceil(num)} <br>`;
+document.body.innerHTML += `Com duas casas decimais: ${num.toFixed(2)} <br>`;
