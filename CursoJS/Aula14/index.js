@@ -15,11 +15,19 @@ alunos[aux] = 'Kaua';
 alunos[aux] = 'Roberto'; */
 
 alunos[alunos.length] = 'Paçoca';
-alunos.push('Paulo');
-alunos.unshift('Vitor');
-
-const removed = alunos.pop(); //remove o ultimo do array
-
-
+alunos.push('Paulo'); //Adiciona no final
+alunos.unshift('Vitor'); // Adiciona no inicio
 
 console.log(alunos);
+
+const lastRm = alunos.pop(); //remove o ultimo do array
+const firstRm = alunos.shift(); //remove o ultimo do array
+
+delete alunos[1]; // deleta o item no local desejado, deixando vazio aquele local
+console.log(alunos);
+console.log(alunos[1]);
+
+console.log(alunos.slice(0, 2));
+
+console.log(typeof alunos);
+console.log(alunos instanceof Array);
