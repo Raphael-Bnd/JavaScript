@@ -9,13 +9,17 @@ alunos[3] = 'Danilo';
 
 let aux = Number(alunos.length);
 console.log(alunos.length);
-
 alunos[aux] = 'Kaua';
-aux = Number(alunos.length);
 
-alunos[aux] = 'Roberto';
+/* aux = Number(alunos.length);
+alunos[aux] = 'Roberto'; */
 
 alunos[alunos.length] = 'Paçoca';
-alunos[alunos.length] = 'Pepino';
+alunos.push('Paulo');
+alunos.unshift('Vitor');
+
+const removed = alunos.pop(); //remove o ultimo do array
+
+
 
 console.log(alunos);
