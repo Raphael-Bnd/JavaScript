@@ -11,6 +11,7 @@ const hora = 53;
 if (hora >= 0 && hora <= 11) {
   console.log("Bom dia!");
 } else if (hora >= 12 && hora <= 17) {
+  // CASO ESTE SEJA VERDADEIRO, TODO O RESTO DO CÓDIGO ABAIXO É IGNORADO
   // pode-se ter varios else if em um sistema
   console.log("Boa Tarde!");
 } else if (hora >= 18 && hora <= 23) {
