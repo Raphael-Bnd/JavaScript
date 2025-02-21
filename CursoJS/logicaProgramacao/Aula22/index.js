@@ -15,14 +15,14 @@ if (hora >= 0 && hora <= 11) {
   console.log("Boa Tarde!");
 } else if (hora >= 18 && hora <= 23) {
   console.log("Boa Noite!");
-} else { // só posso ter um else na checagem
+} else {
+  // só posso ter um else na checagem
   console.log("ERRO: HORARIO NÃO PREVISTO PELO SISTEMA!");
 }
 
-
 const hvMoney = true;
-if (hvMoney){
+if (hvMoney) {
   console.log("I'll go out today.");
 } else {
-  console.log("Nah, i'm not going out today.")
+  console.log("Nah, i'm not going out today.");
 }
