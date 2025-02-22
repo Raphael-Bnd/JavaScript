@@ -141,6 +141,7 @@ form input:focus {
   border-radius: 5px;
   display: none;
   font-weight: 800;
+  margin-bottom: 0px;
 }
 
 .resultado:hover {
@@ -148,3 +149,4 @@ form input:focus {
   background-color: var(--acepted-color2);
   cursor: pointer;
 }
+
