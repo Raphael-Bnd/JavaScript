@@ -6,6 +6,8 @@
   --tercery-color: rgb(8, 189, 255);
   --tercery-color-darker: rgb(40, 128, 161);
   --activate-color: rgb(255, 0, 0);
+  --acepted-color: rgb(6, 167, 67);
+  --acepted-color2: rgb(4, 114, 46);
 }
 
 * {
@@ -126,4 +128,23 @@ form input:focus {
   margin-top: -3px;
   font-size: 25px;
   font-weight: 800;
+}
+
+.resultado {
+  color: var(--secondary-color);
+  margin-top: 4px;
+  text-align: center;
+  align-items: center;
+  padding: 13px;
+  width: 100%;
+  background-color: var(--acepted-color);
+  border-radius: 5px;
+  display: none;
+  font-weight: 800;
+}
+
+.resultado:hover {
+  color: #ffffff;
+  background-color: var(--acepted-color2);
+  cursor: pointer;
 }
