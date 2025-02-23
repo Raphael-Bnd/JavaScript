@@ -130,7 +130,8 @@ form input:focus {
   font-weight: 800;
 }
 
-.resultado {
+.paragrafo-resultado,
+.bad {
   color: var(--secondary-color);
   margin-top: 4px;
   text-align: center;
@@ -139,14 +140,20 @@ form input:focus {
   width: 100%;
   background-color: var(--acepted-color);
   border-radius: 5px;
-  display: none;
   font-weight: 800;
   margin-bottom: 0px;
 }
 
-.resultado:hover {
+.paragrafo-resultado:hover {
   color: #ffffff;
   background-color: var(--acepted-color2);
   cursor: pointer;
 }
 
+.bad {
+  background-color: var(--activate-color);
+}
+
+.bad:hover {
+  background-color: rgb(192, 4, 4);
+}
