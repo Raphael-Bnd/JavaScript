@@ -1,3 +1,4 @@
-function getAge() {
-  console.log("Digite seu Nome");
-}
+const data = new Date();
+const diaSemana = data.getDay();
+
+console.log(diaSemana);
