@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --primary-color: #090d13;
+  --secondary-color: #ffffff;
+  --tercery-color: rgb(8, 189, 255);
+  --tercery-color-darker: rgb(40, 128, 161);
+  --activate-color: rgb(255, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "JetBrains Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+body {
+  background: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background-color: #ffffff0c;
+  padding: 15px 50px 50px;
+  border-radius: 12px;
+}
+
+h1,
+p,
+label {
+  color: var(--secondary-color);
+}
+
+p {
+  padding-top: -2px;
+  margin-top: -8px;
+  font-size: 12px;
+}
+
+input {
+  width: 100%;
+}
+
+campo {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 9px;
+  width: 100%;
+}
+
+label {
+  font-size: 12px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+button {
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 900;
+  border: 2px transparent;
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: var(--tercery-color);
+  border-radius: 8px;
+}
+
+button:hover {
+  transition: 0.15s linear;
+  background-color: var(--tercery-color-darker);
+}
+
+button:active {
+  transition: 0.4s ease;
+  background-color: var(--activate-color);
+}
+
+h1 {
+  font-weight: 900;
+}
+
+form input {
+  width: 100%;
+  font-size: 14px;
+  height: 30px;
+  border-radius: 6px;
+  border-color: transparent;
+  margin-bottom: 5px;
+}
+
+form input:focus {
+  outline: 1px solid var(--tercery-color);
+  outline-offset: 2px;
+  outline-width: 1px;
+}
