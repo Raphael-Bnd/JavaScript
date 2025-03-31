@@ -82,10 +82,31 @@ b {
     display: none;
   }
   button {
-    width: 75%;
-    height: 4ch;
+    width: 92%;
+    padding: 10px 0px 10px 0px;
   }
+
   input {
-    width: 71%;
+    align-items: center;
+    width: 90%;
+    height: 30px;
+    padding: 5px 0px 5px 0px;
+  }
+
+  h1 {
+    font-size: 5ch;
+    margin: 10% 0 5% 0;
+  }
+  .container {
+    margin: 0;
+    width: 94%;
+    padding: 0;
+    margin-left: 6%;
+  }
+
+  .Aviso {
+    width: 80%;
+    padding: 0;
+    margin: 10% 10% 0px 10%;
   }
 }
