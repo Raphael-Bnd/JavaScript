@@ -1,0 +1,68 @@
+:root {
+    --primary-color: rgb(51, 129, 237);
+    --hover-color: rgb(109, 162, 236);
+    --selected-color: rgb(6, 53, 119);
+    --font-size: 20px;
+    --shadow: 0px 0px 20px rgb(51, 130, 240);
+}
+
+* {
+    background-color: rgb(30, 30, 30);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50pc;
+}
+
+
+#palagrafo {
+    display: none;
+    text-align: justify;
+    color: white;
+    width: 100%;
+}
+
+#palagrafo.visivel {
+    display: flex;
+}
+
+.butao {
+    width: 100%;
+    margin-bottom: 2ch;
+    padding: 2vmin 2vmin;
+    color: white;
+    background-color: var(--primary-color);
+    font-size: var(--font-size);
+    border-color: transparent;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.butao:hover {
+    transition: background-color 0.2s ease;
+    background-color: var(--hover-color);
+}
+
+.butao:active {
+    transition: background-color 0.2s ease;
+    box-shadow: 0px 0px 20px var(--selected-color);
+    background-color: var(--selected-color);
+}
+
+#line {
+    max-width: 45ch;
+    min-width: 15ch;
+    margin: 8% 5% 0 5%;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.243);
+    border-radius: 20px;
+    padding: 4vmin 5vmin;
+    height: auto;
+    display: inline-block;
+}
