@@ -29,7 +29,7 @@ botao.onclick = alterarTexto;
 
 
 //FUNÇÕES JAVASCRIPT:
-// function reiniciar() {
+// function reiniciar() { //REINICIA A JANELA
 //     window.location.reload(true);
 // }
 
@@ -62,9 +62,9 @@ const coresNomes = cores.map(cor => cor.nome); //Neste caso, o map percorre todo
 console.log(coresNomes);
 //-------------------
 
-// const alertaEx = (texto) => {
-//     alert(texto);
-// }
+const alertaEx = (texto) => {
+    alert(texto);
+}
 
 //TIPOS DE VARIAVEIS E ESCOPO:
 // VARIAVEL VAR
@@ -102,13 +102,13 @@ const constante = 'Valor inicial atribuido';
 // const constante = 'Redeclarada'; // LET NÃO PODE SER RE-ATRIBUIDA NEM RE-DECLARADA!
 
 // CHAMANDO AS FUNÇÕES:
-// alerta('Quero exibir isso!');
-// alertaEx('Após, exibo isto!');
+alerta('Quero exibir isso!');
+alertaEx('Após, exibo isto!');
 
 // ALERTA AO CARREGAR A PAGINA:
-// window.onload = () => {
-//     alert('Página carregada com sucesso!');
-// }
+window.onload = () => {
+    alert('Página carregada com sucesso!');
+}
 
 // window.addEventListener('load', function (event) {
 //     this.alert('Todos os recursos terminaram o carregamento!');
