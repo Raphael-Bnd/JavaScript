@@ -3,8 +3,10 @@ console.log('I need a better GPU :(');
 
 //Alterar entre texto invisivel e visivel
 function alterarTexto() {
+    var linha = document.getElementById('line');
     var paragrafo = document.getElementById('palagrafo');
     paragrafo.classList.toggle('visivel');
+    linha.classList.toggle('visivel');
 }
 var botao = document.getElementById('butano');
 botao.onclick = alterarTexto;
@@ -62,9 +64,9 @@ const coresNomes = cores.map(cor => cor.nome); //Neste caso, o map percorre todo
 console.log(coresNomes);
 //-------------------
 
-const alertaEx = (texto) => {
-    alert(texto);
-}
+// const alertaEx = (texto) => {
+//     alert(texto);
+// }
 
 //TIPOS DE VARIAVEIS E ESCOPO:
 // VARIAVEL VAR

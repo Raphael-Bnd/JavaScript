@@ -1,13 +1,16 @@
 :root {
-    --primary-color: rgb(51, 129, 237);
-    --hover-color: rgb(109, 162, 236);
-    --selected-color: rgb(6, 53, 119);
+    --background-color: rgb(30, 30, 30);
+    --primary-color: rgb(109, 162, 236);
+    --hover-color: rgba(109, 162, 236, 0.504);
+    --selected-color: rgba(17, 56, 110, 0.187);
     --font-size: 20px;
-    --shadow: 0px 0px 20px rgb(51, 130, 240);
+    --shadow: 0px 0px 20px rgba(51, 130, 240, 0.147);
+    --shadow-selected: 0px 0px 20px rgba(17, 56, 110, 0.187);
+    interpolate-size: allow-keywords;
 }
 
 * {
-    background-color: rgb(30, 30, 30);
+    background-color: var(--background-color);
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -21,48 +24,100 @@
 
 
 #palagrafo {
-    display: none;
-    text-align: justify;
+    max-height: 0;
+    opacity: 0;
+    font-weight: 500;
+    font-size: var(--font-size);
+    visibility: hidden;
+    text-align: flex;
     color: white;
     width: 100%;
+    animation-fill-mode: forwards;
+    animation: fadeSlideOut 0.2s ease-in forwards;
 }
 
 #palagrafo.visivel {
-    display: flex;
+    text-align: justify;
+    margin-top: 2ch;
+    max-height: max-content;
+    visibility: visible;
+    opacity: 0;
+    animation: fadeSlideIn 0.5s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
 .butao {
     width: 100%;
-    margin-bottom: 2ch;
     padding: 2vmin 2vmin;
-    color: white;
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--background-color);
     font-size: var(--font-size);
-    border-color: transparent;
+    border: 0.2ch solid;
+    border-color: var(--primary-color);
     box-shadow: var(--shadow);
     border-radius: 10px;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .butao:hover {
-    transition: background-color 0.2s ease;
+    cursor: pointer;
+    color: rgb(240, 248, 255);
+    transition: all 0.2s ease;
     background-color: var(--hover-color);
 }
 
 .butao:active {
-    transition: background-color 0.2s ease;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.352);
+    transition: all 0.2s ease;
     box-shadow: 0px 0px 20px var(--selected-color);
+    border-color: var(--selected-color);
     background-color: var(--selected-color);
 }
 
 #line {
+    max-height: 150px;
     max-width: 45ch;
-    min-width: 15ch;
     margin: 8% 5% 0 5%;
-    border: 1px solid;
-    border-color: rgba(255, 255, 255, 0.243);
+    border: 1px solid rgba(255, 255, 255, 0.243);
     border-radius: 20px;
+    padding: 3vmin 4vmin;
+    overflow: hidden;
+    margin-bottom: 0;
+    transition: max-height 0.5s ease, padding 0.6s ease;
+}
+
+#line.visivel {
+    max-height: 1000px;
+    display: block;
     padding: 4vmin 5vmin;
-    height: auto;
-    display: inline-block;
+}
+
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideOut {
+    100% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateY(10px);
+    }
+
+    0% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
 }
