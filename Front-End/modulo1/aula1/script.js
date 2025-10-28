@@ -1,4 +1,4 @@
-console.log('I need a better GPU :(');
+console.log('I need a better GPU :');
 
 
 //Alterar entre texto invisivel e visivel
@@ -64,9 +64,12 @@ const coresNomes = cores.map(cor => cor.nome); //Neste caso, o map percorre todo
 console.log(coresNomes);
 //-------------------
 
-// const alertaEx = (texto) => {
-//     alert(texto);
-// }
+const alertaEx = (texto) => {
+    alert(texto);
+}
+const alerta = (texto) => {
+    alert(texto);
+}
 
 //TIPOS DE VARIAVEIS E ESCOPO:
 // VARIAVEL VAR
