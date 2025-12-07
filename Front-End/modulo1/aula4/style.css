@@ -22,14 +22,14 @@
   color: white;
   width: 100%;
   max-width: 35vw;
-  margin: 1rem auto;
+  margin: 1ch auto;
   font-family: monospace;
   font-size: 20px;
   border: 1px solid rgba(255, 255, 255, 0.345);
   border-radius: 15px;
   text-align: justify;
   padding: 2ch;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.211);
   user-select: none;
   cursor: text;
 }
@@ -42,7 +42,7 @@
   align-items: center;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.875);
   user-select: none;
   cursor: pointer;
   transition: 180ms ease-in;
@@ -50,13 +50,14 @@
 }
 
 #botao-inicial:hover {
-  background-color: rgba(244, 244, 244, 0.75);
+  background-color: rgba(228, 228, 228, 0.721);
   transition: 180ms ease-in;
 }
 
 #texto-scnd {
-  margin-top: 2ch;
   text-align: center;
+  display: block;
+  position: fixed;
 }
 
 #txtBtn {
