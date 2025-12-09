@@ -4,9 +4,9 @@
 // };
 
 //Alerta ao carregar a página usando jQuery
-$(function () {
-  alert('Evento disparado com Jquery ao final do carregamento da página!');
-});
+// $(function () {
+//   alert('Evento disparado com Jquery ao final do carregamento da página!');
+// });
 
 $('#botao-inicial').on('click', function () {
   if ($('#texto-scnd').length) {
@@ -20,4 +20,17 @@ $('#botao-inicial').on('click', function () {
     $('.parent').append(novoParagrafo);
     novoParagrafo.hide().slideDown(500);
   }
+});
+
+$('#botao-inicial').hover(
+  function () {
+    $(this).addClass('projetado');
+  },
+  function () {
+    $(this).removeClass('projetado');
+  }
+);
+
+$('#botao-inicial').on('click', function () {
+  $(this).toggleClass('active');
 });
