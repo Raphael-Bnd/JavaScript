@@ -8,6 +8,7 @@
 //   alert('Evento disparado com Jquery ao final do carregamento da página!');
 // });
 
+// Adiciona ou remove o parágrafo ao clicar no botão
 $('#botao-inicial').on('click', function () {
   if ($('#texto-scnd').length) {
     $('#texto-scnd').slideUp(300, function () {
@@ -22,6 +23,7 @@ $('#botao-inicial').on('click', function () {
   }
 });
 
+// Adiciona efeito de "projetar" o botão ao passar o mouse sobre ele
 $('#botao-inicial').hover(
   function () {
     $(this).addClass('projetado');
@@ -31,6 +33,7 @@ $('#botao-inicial').hover(
   }
 );
 
+// Adiciona efeito de "clique" ao botão
 $('#botao-inicial').on('click', function () {
   $(this).toggleClass('active');
 });
