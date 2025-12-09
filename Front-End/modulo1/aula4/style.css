@@ -86,7 +86,6 @@
 }
 
 .ativado {
-  transform: scale(0.98) translateZ(0);
   background-color: rgba(128, 128, 128, 0.721);
 }
 
