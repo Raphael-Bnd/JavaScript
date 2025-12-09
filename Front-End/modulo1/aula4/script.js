@@ -3,10 +3,10 @@
 //     alert('Evento disparado ao final do carregamento da página!');
 // };
 
-//Alerta ao carregar a página usando jQuery
-// $(function () {
-//   alert('Evento disparado com Jquery ao final do carregamento da página!');
-// });
+// Alerta ao carregar a página usando jQuery
+$(function () {
+  alert('Evento disparado com Jquery ao final do carregamento da página!');
+});
 
 // Adiciona ou remove o parágrafo ao clicar no botão
 $('#botao-inicial').on('click', function () {
@@ -36,4 +36,10 @@ $('#botao-inicial').hover(
 // Adiciona efeito de "clique" ao botão
 $('#botao-inicial').on('click', function () {
   $(this).toggleClass('active');
+});
+
+// Alerta ao pressionar qualquer tecla no corpo da página
+$('body').keypress(function (event) {
+  event.preventDefault();
+  alert('Tecla pressionada: ' + String.fromCharCode(event.which));
 });
