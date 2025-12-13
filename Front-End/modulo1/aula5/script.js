@@ -1,11 +1,11 @@
-$(function () {
-  $('#linkAmazon').on('click', function (event) {
-    //    event.preventDefault();
-    alert('Você está saindo do site da aula5');
-  });
-});
+// $(function () {
+//   $('.linkAmazon').on('click', function (event) {
+//     //    event.preventDefault();
+//     alert('Você está saindo do site da aula5');
+//   });
+// });
 
-$('#linkAmazon')
+$('.linkAmazon')
   .on('mouseover', function () {
     $(this).addClass('projetado');
   })
