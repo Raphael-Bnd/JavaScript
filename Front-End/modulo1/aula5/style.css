@@ -21,7 +21,7 @@
   width: 35vw;
   word-spacing: -8px;
   box-shadow: 0 0 10px var(--botao);
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
 
 .linkAmazon:hover {
