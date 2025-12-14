@@ -34,6 +34,6 @@ $(document).ready(function () {
       } else {
         window.location.href = 'index.html';
       }
-    }, 300); // 300ms de atraso
+    }, 200); // 300ms de atraso
   });
 });
