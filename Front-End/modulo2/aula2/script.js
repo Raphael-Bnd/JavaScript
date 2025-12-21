@@ -15,4 +15,4 @@ Vue.createApp({
       this.foto = URL.createObjectURL(file);
     },
   },
-}).mount('#central');
+}).mount('#app');

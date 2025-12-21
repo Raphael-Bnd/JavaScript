@@ -125,3 +125,7 @@ input {
 h1 {
   font-size: 3rem;
 }
+
+[v-cloak] {
+  display: none;
+}
