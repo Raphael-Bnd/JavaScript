@@ -42,14 +42,17 @@ function carregaDadosJson() {
     })
     .fail(function (jqXHR, textStatus, msg) {
       //Em caso de fracasso, mostrar no console a mensagem de erro retornada
-      console.log('A requisição falhou e retornou com a seguinte mensagem: ' + msg);
+      console.log(
+        'A requisição falhou e retornou com a seguinte mensagem: ' + msg
+      );
     });
 }
 
 //Funções de Filtros
 //#1 Clique no checkbox - Fabricante
 $('form input:radio').click(function (ck) {
-  if ($(this).prop('checked') == true) filtrarDados('Fabricante', $(this).val());
+  if ($(this).prop('checked') == true)
+    filtrarDados('Fabricante', $(this).val());
 });
 
 //#2 Digitação no input - Modelo
